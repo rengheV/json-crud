@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Car Management</h1>
+    <form id="carForm">
+      <input type="hidden" id="carId" />
+      <div>
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" required />
+      </div>
+      <div>
+        <label for="model">Model:</label>
+        <input type="text" id="model" required />
+      </div>
+      <div>
+        <label for="year">Year:</label>
+        <input type="number" id="year" required />
+      </div>
+      <button type="submit">Add Car</button>
+      <button type="button" id="updateButton" style="display: none;">Update Car</button>
+    </form>
+
+    <table id="carTable">
+      <thead>
+        <tr>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Year</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Cars will be displayed here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
